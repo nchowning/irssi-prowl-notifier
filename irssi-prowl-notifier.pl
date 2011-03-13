@@ -46,7 +46,7 @@ sub nick_hilight {
 
 sub prowlsend {
     my(@smessage) = @_;
-    my $apikey = '43aa85ee6ac8d9e0ad8e9940a122d2b513ff2019';
+    my $apikey = 'PUT_API_KEY_HERE';
     my $ws = WebService::Prowl->new(apikey => $apikey);
     $ws->verify || die $ws->error();
     $ws->add(application => "irssi",

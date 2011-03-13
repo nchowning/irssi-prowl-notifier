@@ -12,3 +12,36 @@
             \/                              \/       
 
 ***************************************************************
+
+Description: Catches private messages (when you're away) and nick highlights in irssi and directs them to the Prowl API.
+http://prowlapp.com/
+
+Version: 0.2
+
+Author: Nathan Chowning (nathanchowning@me.com)
+
+######
+# This script is based on fnotify created by Thorsten Leemhuis
+# http://www.leemhuis.info/files/fnotify/
+######
+
+           ___  ___                              
+          |   |/   \___________     ____   ____  
+          |   |    /  ___/\__  \   / ___\_/ __ \ 
+          |       /\___ \  / __ \_/ /_/  >  ___/ 
+          |______//____  >(____  /\___  / \___  >
+                       \/      \//_____/      \/ 
+
+***************************************************************
+
+This script requires the following perl modules:
+Crypt::SSLeay
+WebService::Prowl
+
+On most setups you should be able to just run "cpan WebService::Prowl"
+In some cases it might require a little more work.
+
+You'll need to edit the script to add your Prowl API key (replace "PUT_API_KEY_HERE" with your API key).
+
+To load this script, simply put it in your ~/.irssi/scripts/ directory and do:
+/script load irssi-prowl-notifier.pl
